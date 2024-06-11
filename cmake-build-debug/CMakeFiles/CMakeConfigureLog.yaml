@@ -4,51 +4,51 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:206 (message)"
       - "CMakeLists.txt:17 (project)"
     message: |
       The target system is: Generic - 1 - 
-      The host system is: Linux - 6.8.11-300.fc40.x86_64 - x86_64
+      The host system is: Darwin - 23.5.0 - arm64
   -
     kind: "message-v1"
     backtrace:
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:17 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /usr/bin/arm-none-eabi-gcc 
+      Compiler: /opt/homebrew/bin/arm-none-eabi-gcc 
       Build flags: 
       Id flags:  
       
       The output was:
       1
-      /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
-      /builddir/build/BUILD/newlib-4.4.0.20231231/build-newlib/arm-none-eabi/newlib/../../../newlib/libc/stdlib/exit.c:65:(.text.exit+0x28): undefined reference to `_exit'
-      /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
-      /builddir/build/BUILD/newlib-4.4.0.20231231/build-newlib/arm-none-eabi/newlib/../../../newlib/libc/reent/closer.c:47:(.text._close_r+0x18): undefined reference to `_close'
-      /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
-      /builddir/build/BUILD/newlib-4.4.0.20231231/build-newlib/arm-none-eabi/newlib/../../../newlib/libc/reent/lseekr.c:49:(.text._lseek_r+0x24): undefined reference to `_lseek'
-      /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
-      /builddir/build/BUILD/newlib-4.4.0.20231231/build-newlib/arm-none-eabi/newlib/../../../newlib/libc/reent/readr.c:49:(.text._read_r+0x24): undefined reference to `_read'
-      /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
-      /builddir/build/BUILD/newlib-4.4.0.20231231/build-newlib/arm-none-eabi/newlib/../../../newlib/libc/reent/writer.c:49:(.text._write_r+0x24): undefined reference to `_write'
-      /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
-      /builddir/build/BUILD/newlib-4.4.0.20231231/build-newlib/arm-none-eabi/newlib/../../../newlib/libc/reent/sbrkr.c:51:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+      /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x28): undefined reference to `_exit'
+      /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+      closer.c:(.text._close_r+0x18): undefined reference to `_close'
+      /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
+      /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+      readr.c:(.text._read_r+0x24): undefined reference to `_read'
+      /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+      /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+      writer.c:(.text._write_r+0x24): undefined reference to `_write'
       collect2: error: ld returned 1 exit status
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:17 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /usr/bin/arm-none-eabi-gcc 
+      Compiler: /opt/homebrew/bin/arm-none-eabi-gcc 
       Build flags: 
       Id flags: -c 
       
@@ -59,48 +59,48 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
       
       The C compiler identification is GNU, found in:
-        /home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.o
+        /Users/volodic/CLionProjects/Microproc_Project/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.o
       
   -
     kind: "message-v1"
     backtrace:
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:17 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-      Compiler: /usr/bin/arm-none-eabi-g++ 
+      Compiler: /opt/homebrew/bin/arm-none-eabi-g++ 
       Build flags: 
       Id flags:  
       
       The output was:
       1
-      /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
-      /builddir/build/BUILD/newlib-4.4.0.20231231/build-newlib/arm-none-eabi/newlib/../../../newlib/libc/stdlib/exit.c:65:(.text.exit+0x28): undefined reference to `_exit'
-      /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
-      /builddir/build/BUILD/newlib-4.4.0.20231231/build-newlib/arm-none-eabi/newlib/../../../newlib/libc/reent/closer.c:47:(.text._close_r+0x18): undefined reference to `_close'
-      /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
-      /builddir/build/BUILD/newlib-4.4.0.20231231/build-newlib/arm-none-eabi/newlib/../../../newlib/libc/reent/lseekr.c:49:(.text._lseek_r+0x24): undefined reference to `_lseek'
-      /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
-      /builddir/build/BUILD/newlib-4.4.0.20231231/build-newlib/arm-none-eabi/newlib/../../../newlib/libc/reent/readr.c:49:(.text._read_r+0x24): undefined reference to `_read'
-      /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
-      /builddir/build/BUILD/newlib-4.4.0.20231231/build-newlib/arm-none-eabi/newlib/../../../newlib/libc/reent/writer.c:49:(.text._write_r+0x24): undefined reference to `_write'
-      /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
-      /builddir/build/BUILD/newlib-4.4.0.20231231/build-newlib/arm-none-eabi/newlib/../../../newlib/libc/reent/sbrkr.c:51:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+      /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x28): undefined reference to `_exit'
+      /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+      closer.c:(.text._close_r+0x18): undefined reference to `_close'
+      /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
+      /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+      readr.c:(.text._read_r+0x24): undefined reference to `_read'
+      /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+      /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+      writer.c:(.text._write_r+0x24): undefined reference to `_write'
       collect2: error: ld returned 1 exit status
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:17 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /usr/bin/arm-none-eabi-g++ 
+      Compiler: /opt/homebrew/bin/arm-none-eabi-g++ 
       Build flags: 
       Id flags: -c 
       
@@ -111,17 +111,17 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
       
       The CXX compiler identification is GNU, found in:
-        /home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdCXX/CMakeCXXCompilerId.o
+        /Users/volodic/CLionProjects/Microproc_Project/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.o
       
   -
     kind: "message-v1"
     backtrace:
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1104 (message)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "CMakeLists.txt:17 (project)"
     message: |
       Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
-      arm-none-eabi-gcc (Fedora 13.2.0-5.fc40) 13.2.0
+      arm-none-eabi-gcc (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 13.2.1 20231009
       Copyright (C) 2023 Free Software Foundation, Inc.
       This is free software; see the source for copying conditions.  There is NO
       warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -129,14 +129,14 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:17 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CTQ20r"
-      binary: "/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CTQ20r"
+      source: "/Users/volodic/CLionProjects/Microproc_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yQgtx5"
+      binary: "/Users/volodic/CLionProjects/Microproc_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yQgtx5"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -145,117 +145,121 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CTQ20r'
+        Change Dir: '/Users/volodic/CLionProjects/Microproc_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yQgtx5'
         
-        Run Build Command(s): /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_87b6b/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_87b6b.dir/build.make CMakeFiles/cmTC_87b6b.dir/build
-        gmake[1]: Entering directory '/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CTQ20r'
-        Building C object CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.obj
-        /usr/bin/arm-none-eabi-gcc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.obj -c /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6c8fe/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6c8fe.dir/build.make CMakeFiles/cmTC_6c8fe.dir/build
+        Building C object CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.obj
+        /opt/homebrew/bin/arm-none-eabi-gcc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.obj -c "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCCompilerABI.c"
         Using built-in specs.
-        COLLECT_GCC=/usr/bin/arm-none-eabi-gcc
+        COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc
         Target: arm-none-eabi
-        Configured with: ../gcc-13.2.0/configure --prefix=/usr --mandir=/usr/share/man --with-pkgversion='Fedora 13.2.0-5.fc40' --with-bugurl=https://bugzilla.redhat.com/ --infodir=/usr/share/info --target=arm-none-eabi --enable-interwork --enable-multilib --with-python-dir=share/arm-none-eabi/gcc-13.2.0/python --with-multilib-list=rmprofile --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --enable-languages=c,c++ --with-newlib --disable-nls --disable-shared --disable-threads --with-gnu-as --with-gnu-ld --with-gmp --with-mpfr --with-mpc --with-headers=yes --with-system-zlib --with-sysroot=/usr/arm-none-eabi
+        Configured with: /Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/src/gcc/configure --target=arm-none-eabi --prefix=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install --with-gmp=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpfr=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpc=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-isl=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)' --with-bugurl=https://bugs.linaro.org/
         Thread model: single
         Supported LTO compression algorithms: zlib
-        gcc version 13.2.0 (Fedora 13.2.0-5.fc40) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_87b6b.dir/'
-         /usr/libexec/gcc/arm-none-eabi/13.2.0/cc1 -quiet -v -D__USES_INITFINI__ /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_87b6b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o /tmp/ccTaG8SL.s
-        GNU C17 (Fedora 13.2.0-5.fc40) version 13.2.0 (arm-none-eabi)
-        	compiled by GNU C version 14.0.1 20240217 (Red Hat 14.0.1-0), GMP version 6.2.1, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        gcc version 13.2.1 20231009 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_6c8fe.dir/'
+         /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/cc1 -quiet -v -iprefix /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/ -isysroot /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_6c8fe.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o /var/folders/z9/qfsmj2ss4b102r8kgzvg6mh00000gn/T//cc5SL89Z.s
+        GNU C17 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) version 13.2.1 20231009 (arm-none-eabi)
+        	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+        
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"
-        ignoring nonexistent directory "/usr/arm-none-eabi/usr/include"
+        ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include"
+        ignoring nonexistent directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include-fixed"
+        ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include"
+        ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /usr/lib/gcc/arm-none-eabi/13.2.0/include
-         /usr/lib/gcc/arm-none-eabi/13.2.0/include-fixed
-         /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include
+         /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include
+         /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed
+         /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include
         End of search list.
-        Compiler executable checksum: ab6428e570e547a702f80300f86b1ad3
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_87b6b.dir/'
-         /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.obj /tmp/ccTaG8SL.s
-        GNU assembler version 2.42 (arm-none-eabi) using BFD version (Fedora 2.42-2.fc40) 2.42
-        COMPILER_PATH=/usr/libexec/gcc/arm-none-eabi/13.2.0/:/usr/libexec/gcc/arm-none-eabi/13.2.0/:/usr/libexec/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/13.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/
-        LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/13.2.0/:/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.'
-        Linking C static library libcmTC_87b6b.a
-        /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -P CMakeFiles/cmTC_87b6b.dir/cmake_clean_target.cmake
-        /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87b6b.dir/link.txt --verbose=1
-        arm-none-eabi-ar qc libcmTC_87b6b.a CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.obj
-        /usr/bin/arm-none-eabi-ranlib libcmTC_87b6b.a
-        gmake[1]: Leaving directory '/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CTQ20r'
+        Compiler executable checksum: 18f4550fe29065d7f2478f7cc0cc177e
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_6c8fe.dir/'
+         /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.obj /var/folders/z9/qfsmj2ss4b102r8kgzvg6mh00000gn/T//cc5SL89Z.s
+        GNU assembler version 2.41.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 2.41.0.20231009
+        COMPILER_PATH=/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../libexec/gcc/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.'
+        Linking C static library libcmTC_6c8fe.a
+        "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" -P CMakeFiles/cmTC_6c8fe.dir/cmake_clean_target.cmake
+        "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_6c8fe.dir/link.txt --verbose=1
+        arm-none-eabi-ar qc libcmTC_6c8fe.a CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.obj
+        /opt/homebrew/bin/arm-none-eabi-ranlib libcmTC_6c8fe.a
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:17 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/usr/lib/gcc/arm-none-eabi/13.2.0/include]
-          add: [/usr/lib/gcc/arm-none-eabi/13.2.0/include-fixed]
-          add: [/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include]
+          add: [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include]
+          add: [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed]
+          add: [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include]
         end of search list found
-        collapse include dir [/usr/lib/gcc/arm-none-eabi/13.2.0/include] ==> [/usr/lib/gcc/arm-none-eabi/13.2.0/include]
-        collapse include dir [/usr/lib/gcc/arm-none-eabi/13.2.0/include-fixed] ==> [/usr/lib/gcc/arm-none-eabi/13.2.0/include-fixed]
-        collapse include dir [/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include] ==> [/usr/arm-none-eabi/include]
-        implicit include dirs: [/usr/lib/gcc/arm-none-eabi/13.2.0/include;/usr/lib/gcc/arm-none-eabi/13.2.0/include-fixed;/usr/arm-none-eabi/include]
+        collapse include dir [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include] ==> [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include]
+        collapse include dir [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed] ==> [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include-fixed]
+        collapse include dir [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include] ==> [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include]
+        implicit include dirs: [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include;/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include-fixed;/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:17 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CTQ20r']
+        ignore line: [Change Dir: '/Users/volodic/CLionProjects/Microproc_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yQgtx5']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_87b6b/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_87b6b.dir/build.make CMakeFiles/cmTC_87b6b.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CTQ20r']
-        ignore line: [Building C object CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [/usr/bin/arm-none-eabi-gcc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.obj -c /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6c8fe/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6c8fe.dir/build.make CMakeFiles/cmTC_6c8fe.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/opt/homebrew/bin/arm-none-eabi-gcc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.obj -c "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/arm-none-eabi-gcc]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc]
         ignore line: [Target: arm-none-eabi]
-        ignore line: [Configured with: ../gcc-13.2.0/configure --prefix=/usr --mandir=/usr/share/man --with-pkgversion='Fedora 13.2.0-5.fc40' --with-bugurl=https://bugzilla.redhat.com/ --infodir=/usr/share/info --target=arm-none-eabi --enable-interwork --enable-multilib --with-python-dir=share/arm-none-eabi/gcc-13.2.0/python --with-multilib-list=rmprofile --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --enable-languages=c,c++ --with-newlib --disable-nls --disable-shared --disable-threads --with-gnu-as --with-gnu-ld --with-gmp --with-mpfr --with-mpc --with-headers=yes --with-system-zlib --with-sysroot=/usr/arm-none-eabi]
+        ignore line: [Configured with: /Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/src/gcc/configure --target=arm-none-eabi --prefix=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install --with-gmp=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpfr=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpc=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-isl=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)' --with-bugurl=https://bugs.linaro.org/]
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
-        ignore line: [gcc version 13.2.0 (Fedora 13.2.0-5.fc40) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_87b6b.dir/']
-        ignore line: [ /usr/libexec/gcc/arm-none-eabi/13.2.0/cc1 -quiet -v -D__USES_INITFINI__ /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_87b6b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o /tmp/ccTaG8SL.s]
-        ignore line: [GNU C17 (Fedora 13.2.0-5.fc40) version 13.2.0 (arm-none-eabi)]
-        ignore line: [	compiled by GNU C version 14.0.1 20240217 (Red Hat 14.0.1-0)  GMP version 6.2.1  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [gcc version 13.2.1 20231009 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_6c8fe.dir/']
+        ignore line: [ /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/cc1 -quiet -v -iprefix /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/ -isysroot /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_6c8fe.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o /var/folders/z9/qfsmj2ss4b102r8kgzvg6mh00000gn/T//cc5SL89Z.s]
+        ignore line: [GNU C17 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) version 13.2.1 20231009 (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+        ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/usr/arm-none-eabi/usr/include"]
+        ignore line: [ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /usr/lib/gcc/arm-none-eabi/13.2.0/include]
-        ignore line: [ /usr/lib/gcc/arm-none-eabi/13.2.0/include-fixed]
-        ignore line: [ /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include]
+        ignore line: [ /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include]
+        ignore line: [ /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed]
+        ignore line: [ /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: ab6428e570e547a702f80300f86b1ad3]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_87b6b.dir/']
-        ignore line: [ /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.obj /tmp/ccTaG8SL.s]
-        ignore line: [GNU assembler version 2.42 (arm-none-eabi) using BFD version (Fedora 2.42-2.fc40) 2.42]
-        ignore line: [COMPILER_PATH=/usr/libexec/gcc/arm-none-eabi/13.2.0/:/usr/libexec/gcc/arm-none-eabi/13.2.0/:/usr/libexec/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/13.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/13.2.0/:/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C static library libcmTC_87b6b.a]
-        ignore line: [/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -P CMakeFiles/cmTC_87b6b.dir/cmake_clean_target.cmake]
-        ignore line: [/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87b6b.dir/link.txt --verbose=1]
-        ignore line: [arm-none-eabi-ar qc libcmTC_87b6b.a CMakeFiles/cmTC_87b6b.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [/usr/bin/arm-none-eabi-ranlib libcmTC_87b6b.a]
-        ignore line: [gmake[1]: Leaving directory '/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CTQ20r']
+        ignore line: [Compiler executable checksum: 18f4550fe29065d7f2478f7cc0cc177e]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_6c8fe.dir/']
+        ignore line: [ /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.obj /var/folders/z9/qfsmj2ss4b102r8kgzvg6mh00000gn/T//cc5SL89Z.s]
+        ignore line: [GNU assembler version 2.41.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 2.41.0.20231009]
+        ignore line: [COMPILER_PATH=/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../libexec/gcc/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C static library libcmTC_6c8fe.a]
+        ignore line: ["/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" -P CMakeFiles/cmTC_6c8fe.dir/cmake_clean_target.cmake]
+        ignore line: ["/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_6c8fe.dir/link.txt --verbose=1]
+        ignore line: [arm-none-eabi-ar qc libcmTC_6c8fe.a CMakeFiles/cmTC_6c8fe.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/opt/homebrew/bin/arm-none-eabi-ranlib libcmTC_6c8fe.a]
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -267,14 +271,14 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:17 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zrScAQ"
-      binary: "/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zrScAQ"
+      source: "/Users/volodic/CLionProjects/Microproc_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8QeNvA"
+      binary: "/Users/volodic/CLionProjects/Microproc_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8QeNvA"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -283,129 +287,139 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zrScAQ'
+        Change Dir: '/Users/volodic/CLionProjects/Microproc_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8QeNvA'
         
-        Run Build Command(s): /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4e7a4/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_4e7a4.dir/build.make CMakeFiles/cmTC_4e7a4.dir/build
-        gmake[1]: Entering directory '/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zrScAQ'
-        Building CXX object CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.obj
-        /usr/bin/arm-none-eabi-g++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.obj -c /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_638bf/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_638bf.dir/build.make CMakeFiles/cmTC_638bf.dir/build
+        Building CXX object CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.obj
+        /opt/homebrew/bin/arm-none-eabi-g++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.obj -c "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp"
         Using built-in specs.
-        COLLECT_GCC=/usr/bin/arm-none-eabi-g++
+        COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-g++
         Target: arm-none-eabi
-        Configured with: ../gcc-13.2.0/configure --prefix=/usr --mandir=/usr/share/man --with-pkgversion='Fedora 13.2.0-5.fc40' --with-bugurl=https://bugzilla.redhat.com/ --infodir=/usr/share/info --target=arm-none-eabi --enable-interwork --enable-multilib --with-python-dir=share/arm-none-eabi/gcc-13.2.0/python --with-multilib-list=rmprofile --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --enable-languages=c,c++ --with-newlib --disable-nls --disable-shared --disable-threads --with-gnu-as --with-gnu-ld --with-gmp --with-mpfr --with-mpc --with-headers=yes --with-system-zlib --with-sysroot=/usr/arm-none-eabi
+        Configured with: /Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/src/gcc/configure --target=arm-none-eabi --prefix=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install --with-gmp=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpfr=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpc=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-isl=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)' --with-bugurl=https://bugs.linaro.org/
         Thread model: single
         Supported LTO compression algorithms: zlib
-        gcc version 13.2.0 (Fedora 13.2.0-5.fc40) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_4e7a4.dir/'
-         /usr/libexec/gcc/arm-none-eabi/13.2.0/cc1plus -quiet -v -D__USES_INITFINI__ /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_4e7a4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o /tmp/ccLqeJ0G.s
-        GNU C++17 (Fedora 13.2.0-5.fc40) version 13.2.0 (arm-none-eabi)
-        	compiled by GNU C version 14.0.1 20240217 (Red Hat 14.0.1-0), GMP version 6.2.1, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        gcc version 13.2.1 20231009 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_638bf.dir/'
+         /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/cc1plus -quiet -v -iprefix /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/ -isysroot /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_638bf.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o /var/folders/z9/qfsmj2ss4b102r8kgzvg6mh00000gn/T//ccbC9AKi.s
+        GNU C++17 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) version 13.2.1 20231009 (arm-none-eabi)
+        	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+        
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"
-        ignoring nonexistent directory "/usr/arm-none-eabi/usr/include"
+        ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1"
+        ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"
+        ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/backward"
+        ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include"
+        ignoring nonexistent directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include-fixed"
+        ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include"
+        ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include/c++/13.2.0
-         /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include/c++/13.2.0/arm-none-eabi
-         /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include/c++/13.2.0/backward
-         /usr/lib/gcc/arm-none-eabi/13.2.0/include
-         /usr/lib/gcc/arm-none-eabi/13.2.0/include-fixed
-         /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include
+         /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1
+         /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi
+         /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/backward
+         /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include
+         /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed
+         /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include
         End of search list.
-        Compiler executable checksum: eea6d871829758cd677bbd44da4589c2
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_4e7a4.dir/'
-         /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccLqeJ0G.s
-        GNU assembler version 2.42 (arm-none-eabi) using BFD version (Fedora 2.42-2.fc40) 2.42
-        COMPILER_PATH=/usr/libexec/gcc/arm-none-eabi/13.2.0/:/usr/libexec/gcc/arm-none-eabi/13.2.0/:/usr/libexec/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/13.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/
-        LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/13.2.0/:/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX static library libcmTC_4e7a4.a
-        /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -P CMakeFiles/cmTC_4e7a4.dir/cmake_clean_target.cmake
-        /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e7a4.dir/link.txt --verbose=1
-        arm-none-eabi-ar qc libcmTC_4e7a4.a CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.obj
-        /usr/bin/arm-none-eabi-ranlib libcmTC_4e7a4.a
-        gmake[1]: Leaving directory '/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zrScAQ'
+        Compiler executable checksum: 4ff2f957a4f92f408126d7aa1ec592f3
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_638bf.dir/'
+         /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/z9/qfsmj2ss4b102r8kgzvg6mh00000gn/T//ccbC9AKi.s
+        GNU assembler version 2.41.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 2.41.0.20231009
+        COMPILER_PATH=/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../libexec/gcc/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX static library libcmTC_638bf.a
+        "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" -P CMakeFiles/cmTC_638bf.dir/cmake_clean_target.cmake
+        "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_638bf.dir/link.txt --verbose=1
+        arm-none-eabi-ar qc libcmTC_638bf.a CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.obj
+        /opt/homebrew/bin/arm-none-eabi-ranlib libcmTC_638bf.a
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:17 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include/c++/13.2.0]
-          add: [/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include/c++/13.2.0/arm-none-eabi]
-          add: [/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include/c++/13.2.0/backward]
-          add: [/usr/lib/gcc/arm-none-eabi/13.2.0/include]
-          add: [/usr/lib/gcc/arm-none-eabi/13.2.0/include-fixed]
-          add: [/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include]
+          add: [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1]
+          add: [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi]
+          add: [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/backward]
+          add: [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include]
+          add: [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed]
+          add: [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include]
         end of search list found
-        collapse include dir [/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include/c++/13.2.0] ==> [/usr/arm-none-eabi/include/c++/13.2.0]
-        collapse include dir [/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include/c++/13.2.0/arm-none-eabi] ==> [/usr/arm-none-eabi/include/c++/13.2.0/arm-none-eabi]
-        collapse include dir [/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include/c++/13.2.0/backward] ==> [/usr/arm-none-eabi/include/c++/13.2.0/backward]
-        collapse include dir [/usr/lib/gcc/arm-none-eabi/13.2.0/include] ==> [/usr/lib/gcc/arm-none-eabi/13.2.0/include]
-        collapse include dir [/usr/lib/gcc/arm-none-eabi/13.2.0/include-fixed] ==> [/usr/lib/gcc/arm-none-eabi/13.2.0/include-fixed]
-        collapse include dir [/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include] ==> [/usr/arm-none-eabi/include]
-        implicit include dirs: [/usr/arm-none-eabi/include/c++/13.2.0;/usr/arm-none-eabi/include/c++/13.2.0/arm-none-eabi;/usr/arm-none-eabi/include/c++/13.2.0/backward;/usr/lib/gcc/arm-none-eabi/13.2.0/include;/usr/lib/gcc/arm-none-eabi/13.2.0/include-fixed;/usr/arm-none-eabi/include]
+        collapse include dir [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1] ==> [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1]
+        collapse include dir [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi] ==> [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1/arm-none-eabi]
+        collapse include dir [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/backward] ==> [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1/backward]
+        collapse include dir [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include] ==> [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include]
+        collapse include dir [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed] ==> [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include-fixed]
+        collapse include dir [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include] ==> [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include]
+        implicit include dirs: [/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1;/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1/arm-none-eabi;/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1/backward;/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include;/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include-fixed;/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
-      - "/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:17 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zrScAQ']
+        ignore line: [Change Dir: '/Users/volodic/CLionProjects/Microproc_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8QeNvA']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4e7a4/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_4e7a4.dir/build.make CMakeFiles/cmTC_4e7a4.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zrScAQ']
-        ignore line: [Building CXX object CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [/usr/bin/arm-none-eabi-g++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.obj -c /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_638bf/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_638bf.dir/build.make CMakeFiles/cmTC_638bf.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/opt/homebrew/bin/arm-none-eabi-g++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.obj -c "/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/arm-none-eabi-g++]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-g++]
         ignore line: [Target: arm-none-eabi]
-        ignore line: [Configured with: ../gcc-13.2.0/configure --prefix=/usr --mandir=/usr/share/man --with-pkgversion='Fedora 13.2.0-5.fc40' --with-bugurl=https://bugzilla.redhat.com/ --infodir=/usr/share/info --target=arm-none-eabi --enable-interwork --enable-multilib --with-python-dir=share/arm-none-eabi/gcc-13.2.0/python --with-multilib-list=rmprofile --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --enable-languages=c,c++ --with-newlib --disable-nls --disable-shared --disable-threads --with-gnu-as --with-gnu-ld --with-gmp --with-mpfr --with-mpc --with-headers=yes --with-system-zlib --with-sysroot=/usr/arm-none-eabi]
+        ignore line: [Configured with: /Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/src/gcc/configure --target=arm-none-eabi --prefix=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install --with-gmp=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpfr=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpc=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-isl=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)' --with-bugurl=https://bugs.linaro.org/]
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
-        ignore line: [gcc version 13.2.0 (Fedora 13.2.0-5.fc40) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_4e7a4.dir/']
-        ignore line: [ /usr/libexec/gcc/arm-none-eabi/13.2.0/cc1plus -quiet -v -D__USES_INITFINI__ /home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_4e7a4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o /tmp/ccLqeJ0G.s]
-        ignore line: [GNU C++17 (Fedora 13.2.0-5.fc40) version 13.2.0 (arm-none-eabi)]
-        ignore line: [	compiled by GNU C version 14.0.1 20240217 (Red Hat 14.0.1-0)  GMP version 6.2.1  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [gcc version 13.2.1 20231009 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_638bf.dir/']
+        ignore line: [ /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/cc1plus -quiet -v -iprefix /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/ -isysroot /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_638bf.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -fdiagnostics-color=always -o /var/folders/z9/qfsmj2ss4b102r8kgzvg6mh00000gn/T//ccbC9AKi.s]
+        ignore line: [GNU C++17 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) version 13.2.1 20231009 (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.29.30)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+        ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/usr/arm-none-eabi/usr/include"]
+        ignore line: [ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1"]
+        ignore line: [ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"]
+        ignore line: [ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/backward"]
+        ignore line: [ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring duplicate directory "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include/c++/13.2.0]
-        ignore line: [ /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include/c++/13.2.0/arm-none-eabi]
-        ignore line: [ /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include/c++/13.2.0/backward]
-        ignore line: [ /usr/lib/gcc/arm-none-eabi/13.2.0/include]
-        ignore line: [ /usr/lib/gcc/arm-none-eabi/13.2.0/include-fixed]
-        ignore line: [ /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/include]
+        ignore line: [ /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1]
+        ignore line: [ /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi]
+        ignore line: [ /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/backward]
+        ignore line: [ /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include]
+        ignore line: [ /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed]
+        ignore line: [ /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: eea6d871829758cd677bbd44da4589c2]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_4e7a4.dir/']
-        ignore line: [ /usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccLqeJ0G.s]
-        ignore line: [GNU assembler version 2.42 (arm-none-eabi) using BFD version (Fedora 2.42-2.fc40) 2.42]
-        ignore line: [COMPILER_PATH=/usr/libexec/gcc/arm-none-eabi/13.2.0/:/usr/libexec/gcc/arm-none-eabi/13.2.0/:/usr/libexec/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/13.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/bin/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/13.2.0/:/usr/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX static library libcmTC_4e7a4.a]
-        ignore line: [/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -P CMakeFiles/cmTC_4e7a4.dir/cmake_clean_target.cmake]
-        ignore line: [/home/volodic/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e7a4.dir/link.txt --verbose=1]
-        ignore line: [arm-none-eabi-ar qc libcmTC_4e7a4.a CMakeFiles/cmTC_4e7a4.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [/usr/bin/arm-none-eabi-ranlib libcmTC_4e7a4.a]
-        ignore line: [gmake[1]: Leaving directory '/home/volodic/KTU/MP/Project/Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zrScAQ']
+        ignore line: [Compiler executable checksum: 4ff2f957a4f92f408126d7aa1ec592f3]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_638bf.dir/']
+        ignore line: [ /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/z9/qfsmj2ss4b102r8kgzvg6mh00000gn/T//ccbC9AKi.s]
+        ignore line: [GNU assembler version 2.41.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 2.41.0.20231009]
+        ignore line: [COMPILER_PATH=/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../libexec/gcc/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/:/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX static library libcmTC_638bf.a]
+        ignore line: ["/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" -P CMakeFiles/cmTC_638bf.dir/cmake_clean_target.cmake]
+        ignore line: ["/Users/volodic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/233.14475.31/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_638bf.dir/link.txt --verbose=1]
+        ignore line: [arm-none-eabi-ar qc libcmTC_638bf.a CMakeFiles/cmTC_638bf.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/opt/homebrew/bin/arm-none-eabi-ranlib libcmTC_638bf.a]
         ignore line: []
         ignore line: []
         implicit libs: []

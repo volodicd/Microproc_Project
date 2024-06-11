@@ -6,7 +6,6 @@
 #include "hx711.h"
 #include "stdio.h"
 #include "stm32f4xx_hal.h"
-#include "stdint.h"
 #include "malloc.h"
 #include "flash.h"
 
@@ -23,7 +22,10 @@ typedef struct SensorsMes{
     Time meas_time;
 } SensorsMes;
 
-SensorsMes * main_arr;
+SensorsMes main_arr[100];
+
+
+
 size_t string_length(const char *str) {
     size_t length = 0;
     while (str[length] != '\0') {
@@ -44,7 +46,7 @@ void read_all_measurements_from_flash(SensorsMes *data_array, size_t max_records
     size_t record_size = sizeof(SensorsMes);
     for (size_t i = 0; i < max_records; i++) {
         uint32_t address = FLASH_USER_START_ADDR + i * record_size;
-        Flash_Read(address, (uint8_t*)&data_array[i], record_size);
+        Flash_Read(address, (uint8_t*)&main_arr[i], record_size);
     }
 }
 
@@ -67,34 +69,35 @@ uint8_t string_check(const char *str_chk, const char * str_org){
 
 uint8_t time_count = 0;
 void send_data_huart(UART_HandleTypeDef *huart, RTC_HandleTypeDef * hrtc, HX711 * hx_obj, TIM_HandleTypeDef * htim, uint8_t temp_time_count){
-    if (htim -> Instance == TIM3) {
-        if(time_count < temp_time_count){
-            time_count+=1;
+    if(htim -> Instance == TIM3) {
+        if (time_count < temp_time_count) {
+            time_count += 1;
         }
-        else{
+        else {
             char msg[50];
             double dist = meas_dist();
             RTC_TimeTypeDef time;
             RTC_DateTypeDef date;
             HAL_RTC_GetTime(hrtc, &time, RTC_FORMAT_BIN);
             HAL_RTC_GetDate(hrtc, &date, RTC_FORMAT_BIN);
-            sprintf(msg, "%02d:%02d:%02d Distance: %.2f cm Weight: %d\r\n", time.Hours, time.Minutes, time.Seconds, dist,
-                    HX711_GetWeight(hx_obj, 10));
+            sprintf(msg, "%02d:%02d:%02d Distance: %.2f cm Weight: %f\r\n", time.Hours, time.Minutes, time.Seconds,
+                    dist, HX711_GetWeight(hx_obj, 10));
             HAL_UART_Transmit(huart, (uint8_t *) msg, string_length(msg), HAL_MAX_DELAY);
-            SensorsMes meas;
-            meas.dist = dist;
-            meas.weight = (int) HX711_GetWeight(hx_obj, 10);
-            meas.meas_time.sec = time.Seconds, meas.meas_time.min_S = time.Minutes, meas.meas_time.hour = time.Hours;
-            main_arr->weight = (int) HX711_GetWeight(hx_obj, 10);
-            main_arr->dist = dist;
-            main_arr->meas_time.sec = time.Seconds;
-            main_arr->meas_time.min_S = time.Minutes;
-            main_arr->meas_time.hour = time.Hours;
-            save_measurement_to_flash(&meas);
+            SensorsMes * meas = malloc(sizeof (SensorsMes));
+            meas -> dist = dist;
+            meas -> weight = (int) HX711_GetWeight(hx_obj, 10);
+            meas -> meas_time.sec = time.Seconds, meas -> meas_time.min_S = time.Minutes, meas -> meas_time.hour = time.Hours;
+            main_arr[counter].weight = (int) HX711_GetWeight(hx_obj, 10);
+            main_arr[counter].dist = dist;
+            main_arr[counter].meas_time.sec = time.Seconds;
+            main_arr[counter].meas_time.min_S = time.Minutes;
+            main_arr[counter].meas_time.hour = time.Hours;
+            save_measurement_to_flash(meas);
             counter += 1;
             time_count = 0;
         }
     }
+
 }
 void tim_spec_del(uint16_t us){
     TIM2-> CNT = 0;
@@ -122,56 +125,59 @@ double meas_dist(){
     return (read_ultrasonic() * 0.034/2);
 }
 
-SensorsMes * find_max(SensorsMes * arr){
+SensorsMes * find_max(){
     SensorsMes * temp = malloc(sizeof (SensorsMes));
     temp -> dist = 0;
     temp -> weight = 0;
     for(int i = 0; i < counter; i++){
-        if(main_arr->dist > temp -> dist){
-            temp -> dist = main_arr -> dist;
+        if(main_arr[i].dist > temp -> dist){
+            temp -> dist = main_arr[i].dist;
         }
-        if(main_arr -> weight > temp -> weight){
-            temp-> weight = main_arr -> weight;
+        if(main_arr[i].weight > temp -> weight){
+            temp-> weight = main_arr[i].weight;
         }
     }
     return temp;
 }
 
-SensorsMes * find_min(SensorsMes * arr){
+SensorsMes * find_min(){
     SensorsMes * temp = malloc(sizeof (SensorsMes));
-    temp -> dist = 0;
-    temp -> weight = 0;
+    temp -> dist = main_arr[0].dist;
+    temp -> weight = main_arr[0].weight;
     for(int i = 0; i < counter; i++){
-        if(main_arr->dist < temp -> dist){
-            temp -> dist = main_arr -> dist;
+        if(main_arr[i].dist < temp -> dist){
+            temp -> dist = main_arr[i].dist;
         }
-        if(main_arr -> weight < temp -> weight){
-            temp-> weight = main_arr -> weight;
+        if(main_arr[i].weight < temp -> weight) {
+            temp->weight = main_arr[i].weight;
         }
     }
     return temp;
 }
 
-int menu(UART_HandleTypeDef *huart){
-    uint8_t buffer[10];
+void menu(UART_HandleTypeDef *huart){
+    uint8_t buffer[40];
     HAL_UART_Receive_IT(huart, (uint8_t*)buffer, 1);
     if(buffer[0] == 's'){
-        read_all_measurements_from_flash(main_arr, counter);
-        SensorsMes * max_data = find_max(main_arr);
+       //read_all_measurements_from_flash(main_arr, counter);
+        SensorsMes * max_data = find_max();
         char msg[10];
-        sprintf(msg, "%02d:%02d:%02d Distance: %.2f cm Weight: %d\r\n", max_data->meas_time, max_data->dist, max_data->weight);
+        sprintf(msg, "Maximum distance: %.2f cm Weight: %d\r\n",max_data->dist, max_data->weight);
         HAL_UART_Transmit(huart, (uint8_t *) msg, string_length(msg), HAL_MAX_DELAY);
         free(max_data);
     }
     else if(buffer[0] == 'm'){
-        read_all_measurements_from_flash(main_arr, counter);
-        SensorsMes * min_data = find_min(main_arr);
+        //read_all_measurements_from_flash(main_arr, counter);
+        SensorsMes * min_data = find_min();
         char msg[10];
-        sprintf(msg, "%02d:%02d:%02d Distance: %.2f cm Weight: %d\r\n", min_data->meas_time, min_data->dist, min_data->weight);
+        sprintf(msg, "Minimum distance: %.2f cm Weight: %d\r\n", min_data->dist, min_data->weight);
         HAL_UART_Transmit(huart, (uint8_t *) msg, string_length(msg), HAL_MAX_DELAY);
         free(min_data);
     }
     else if(buffer[0] == 'c'){
         clean_flash();
+        for(int i = 0; i< counter; i++){
+        free(main_arr + i);
+        }
     }
 }
